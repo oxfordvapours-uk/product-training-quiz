@@ -1,0 +1,1522 @@
+{
+  "title": "Oxford Vapours Training Quiz Bank",
+  "version": "2.7",
+  "generated_from": "21 uploaded training images",
+  "question_count": 80,
+  "questions": [
+    {
+      "id": "Q001",
+      "question": "What does “MTL” refer to?",
+      "choices": [
+        "Mouth To Lung; for users looking to replicate smoking.",
+        "Milliampere hours; used to indicate battery size/capacity.",
+        "Direct To Lung; for producing big clouds and maximising flavour.",
+        "Tracks how many puffs a user gets from one coil."
+      ],
+      "answer": 0,
+      "explanation": "Mouth To Lung; for users looking to replicate smoking.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q002",
+      "question": "What does “RDTL” refer to?",
+      "choices": [
+        "Restricted Direct To Lung; a draw between MTL and DTL.",
+        "Allows the user to choose the wattage.",
+        "Mouth To Lung; a tighter, cigarette-like draw.",
+        "Direct To Lung; a very open draw used at higher power."
+      ],
+      "answer": 0,
+      "explanation": "RDTL means Restricted Direct To Lung. It is more open than MTL but more restricted than a full DTL draw.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q003",
+      "question": "What does “DTL” refer to?",
+      "choices": [
+        "Direct To Lung; vapour is inhaled directly into the lungs.",
+        "Restricted Direct To Lung; a draw between MTL and DTL.",
+        "Mouth To Lung; vapour is held in the mouth before inhaling.",
+        "Draw Time Limit; the maximum permitted puff duration."
+      ],
+      "answer": 0,
+      "explanation": "DTL means Direct To Lung, where vapour is inhaled directly into the lungs, usually with more airflow and higher power.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q004",
+      "question": "What does “PG” refer to?",
+      "choices": [
+        "Propylene Glycol; the thinner of the two vape-juice base mixes.",
+        "A heat-protected plastic used to reduce the chance of an overheated pod.",
+        "Restricted Direct To Lung; a looser draw with a sensation similar to smoking.",
+        "Direct To Lung; for producing big clouds and maximising flavour."
+      ],
+      "answer": 0,
+      "explanation": "Propylene Glycol; the thinner of the two vape-juice base mixes.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q005",
+      "question": "What does “VG” refer to?",
+      "choices": [
+        "Used to determine wattage range; lower resistance generally means higher wattage.",
+        "Allows the user to choose the wattage.",
+        "The recommended low-output plug specification for most vaping devices in the material.",
+        "Vegetable Glycerin; the thicker of the two vape-juice base mixes."
+      ],
+      "answer": 3,
+      "explanation": "Vegetable Glycerin; the thicker of the two vape-juice base mixes.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q006",
+      "question": "What does “Adjustable Airflow” refer to?",
+      "choices": [
+        "Improves coil life by preventing oversaturation.",
+        "Lets users choose how loose or tight the draw feels.",
+        "The recommended low-output plug specification for most vaping devices in the material.",
+        "The mouthpiece found on most tanks."
+      ],
+      "answer": 1,
+      "explanation": "Lets users choose how loose or tight the draw feels.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q007",
+      "question": "What does “mAh” refer to?",
+      "choices": [
+        "Tracks how many puffs a user gets from one coil.",
+        "The mouthpiece found on most tanks.",
+        "Milliampere hours; used to indicate battery size/capacity.",
+        "Propylene Glycol; the thinner of the two vape-juice base mixes."
+      ],
+      "answer": 2,
+      "explanation": "Milliampere hours; used to indicate battery size/capacity.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q008",
+      "question": "What does “Puff Counter” refer to?",
+      "choices": [
+        "Counts the number of puffs taken until the counter is reset.",
+        "Estimates how many puffs remain in the current pod.",
+        "Tracks the number of puffs produced by each coil.",
+        "Measures how long each puff lasts."
+      ],
+      "answer": 0,
+      "explanation": "A puff counter records each puff and continues counting until the user resets it.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q009",
+      "question": "What does a coil resistance measured in ohms indicate?",
+      "choices": [
+        "Its electrical resistance, which helps determine a suitable power range.",
+        "Its battery capacity.",
+        "Its e-liquid capacity.",
+        "Its charging speed."
+      ],
+      "answer": 0,
+      "explanation": "Ohms measure electrical resistance. In comparable vape coils, lower resistance commonly pairs with a higher recommended wattage range.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q010",
+      "question": "What does “Variable Wattage” refer to?",
+      "choices": [
+        "Allows the user to choose the wattage.",
+        "Lets users choose how loose or tight the draw feels.",
+        "The mouthpiece found on most tanks.",
+        "Rubber rings that help keep a tank leak-proof and secure."
+      ],
+      "answer": 0,
+      "explanation": "Allows the user to choose the wattage.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q011",
+      "question": "What does “Lock Fire Button” refer to?",
+      "choices": [
+        "Improves coil life by preventing oversaturation.",
+        "Restricted Direct To Lung; a looser draw with a sensation similar to smoking.",
+        "Reads the coil and automatically sets a suitable wattage range.",
+        "Lets the user lock the fire button and use draw activation only."
+      ],
+      "answer": 3,
+      "explanation": "Lets the user lock the fire button and use draw activation only.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q012",
+      "question": "What does “Draw Activation” refer to?",
+      "choices": [
+        "Restricted Direct To Lung; a looser draw with a sensation similar to smoking.",
+        "Common input specification for battery chargers that distribute power across cells.",
+        "Allows the user to choose the wattage.",
+        "Lets the user vape without pressing a button."
+      ],
+      "answer": 3,
+      "explanation": "Lets the user vape without pressing a button.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q013",
+      "question": "What does “ECO Mode” refer to?",
+      "choices": [
+        "A lower-power operating mode intended to extend battery runtime.",
+        "A mode that increases airflow automatically.",
+        "A mode that disables charging.",
+        "A mode that counts only long puffs."
+      ],
+      "answer": 0,
+      "explanation": "ECO mode reduces or moderates power delivery to extend battery runtime compared with higher-output modes.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q014",
+      "question": "What does “Pulse Mode” refer to?",
+      "choices": [
+        "A mode that pulses power during a puff to maintain consistent flavour and vapour.",
+        "A mode that switches the device off after one puff.",
+        "A mode that only works while charging.",
+        "A mode that automatically closes the airflow."
+      ],
+      "answer": 0,
+      "explanation": "Pulse mode delivers power in rapid pulses during the draw to keep vapour and flavour output more consistent.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q015",
+      "question": "What does “Smart Mode” refer to?",
+      "choices": [
+        "A mode that detects coil resistance and recommends or limits power to a suitable range.",
+        "A mode that refills the pod automatically.",
+        "A mode that changes nicotine strength.",
+        "A mode that measures e-liquid volume."
+      ],
+      "answer": 0,
+      "explanation": "Smart mode reads the installed coil resistance and recommends or restricts wattage to a suitable operating range.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q016",
+      "question": "What does “510 Connection” refer to?",
+      "choices": [
+        "Allows the user to choose the wattage.",
+        "The thread that connects a tank to a mod.",
+        "Propylene Glycol; the thinner of the two vape-juice base mixes.",
+        "Common input specification for battery chargers that distribute power across cells."
+      ],
+      "answer": 1,
+      "explanation": "The thread that connects a tank to a mod.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q019",
+      "question": "What does “PCTG” refer to?",
+      "choices": [
+        "A durable, clear copolyester plastic commonly used for vape pods and cartridges.",
+        "A type of heating wire.",
+        "A battery chemistry.",
+        "A nicotine formulation."
+      ],
+      "answer": 0,
+      "explanation": "PCTG is a clear, durable copolyester valued for impact resistance, chemical resistance and suitability for moulded pods and cartridges.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q020",
+      "question": "What does “Drip Tip” refer to?",
+      "choices": [
+        "Milliampere hours; used to indicate battery size/capacity.",
+        "Improves coil life by preventing oversaturation.",
+        "A heat-protected plastic used to reduce the chance of an overheated pod.",
+        "The mouthpiece found on most tanks."
+      ],
+      "answer": 3,
+      "explanation": "The mouthpiece found on most tanks.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q021",
+      "question": "What does “O-Rings” refer to?",
+      "choices": [
+        "Rubber rings that help keep a tank leak-proof and secure.",
+        "Vegetable Glycerin; the thicker of the two vape-juice base mixes.",
+        "The recommended low-output plug specification for most vaping devices in the material.",
+        "The mouthpiece found on most tanks."
+      ],
+      "answer": 0,
+      "explanation": "Rubber rings that help keep a tank leak-proof and secure.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q022",
+      "question": "Lower-ohm coils generally operate at higher wattage.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "For comparable coil designs, lower resistance generally corresponds to a higher recommended wattage range.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q023",
+      "question": "VG is thinner than PG.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "VG is the thicker base; PG is the thinner one.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q024",
+      "question": "Draw activation requires pressing the fire button.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Draw activation works without pressing a button.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q025",
+      "question": "A 510 connection joins a tank to a mod.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "That is the definition given.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q026",
+      "question": "O-rings are decorative only.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "They help keep tanks leak-proof and secure.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q027",
+      "question": "PCTG is a durable copolyester commonly used to make clear vape pods and cartridges.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "PCTG is commonly used for pods because it is clear, tough and chemically resistant.",
+      "category": "Glossary",
+      "source": "Keyword pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/blog/how-to-change-gen-settings"
+      }
+    },
+    {
+      "id": "Q028",
+      "question": "Ohm Boy 100ml is described as compatible with DTL devices.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Ohm Boy 100ml is formulated for direct-to-lung vaping.",
+      "category": "HVG Juice",
+      "source": "0mg HVG Juice page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://ohmboy.co.uk/"
+      }
+    },
+    {
+      "id": "Q029",
+      "question": "Zeus Juice 100ml is described as compatible with DTL devices.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Zeus Juice 100ml is formulated for direct-to-lung vaping.",
+      "category": "HVG Juice",
+      "source": "0mg HVG Juice page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://zeusjuice.uk/"
+      }
+    },
+    {
+      "id": "Q030",
+      "question": "Seriously 100ml is described as compatible with DTL devices.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Seriously 100ml is formulated for direct-to-lung vaping.",
+      "category": "HVG Juice",
+      "source": "0mg HVG Juice page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://ohmboy.co.uk/"
+      }
+    },
+    {
+      "id": "Q031",
+      "question": "Flavour Treats is described as compatible with DTL devices.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Flavour Treats is suitable for direct-to-lung vaping.",
+      "category": "HVG Juice",
+      "source": "0mg HVG Juice page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://ohmboy.co.uk/"
+      }
+    },
+    {
+      "id": "Q032",
+      "question": "Aisu Mizu is described as compatible with DTL devices.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Aisu Mizu is suitable for direct-to-lung vaping.",
+      "category": "HVG Juice",
+      "source": "0mg HVG Juice page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://zapjuice.co.uk/collections/aisu-mizu"
+      }
+    },
+    {
+      "id": "Q033",
+      "question": "Pixie Juice V2 is described as compatible with DTL devices.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Pixie Juice V2 is suitable for direct-to-lung vaping.",
+      "category": "HVG Juice",
+      "source": "0mg HVG Juice page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.legionofvapers.com/product/pixie-juice-vol-2-100ml-shortfill"
+      }
+    },
+    {
+      "id": "Q034",
+      "question": "How many 18mg nicotine shots added to a 100ml shortfill make the full 120ml bottle approximately 3mg?",
+      "choices": [
+        "4",
+        "2",
+        "3",
+        "1"
+      ],
+      "answer": 1,
+      "explanation": "The page states that two 18mg shots make the full 120ml bottle approximately 3mg.",
+      "category": "HVG Juice",
+      "source": "0mg HVG Juice page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://ohmboy.co.uk/"
+      }
+    },
+    {
+      "id": "Q035",
+      "question": "According to the material, adding two PG nicotine shots to a 100ml HVG bottle changes it to what approximate ratio?",
+      "choices": [
+        "70/30",
+        "50/50",
+        "60/40",
+        "80/20"
+      ],
+      "answer": 2,
+      "explanation": "The page states this creates a 60/40 juice more suitable for MTL devices.",
+      "category": "HVG Juice",
+      "source": "0mg HVG Juice page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://ohmboy.co.uk/"
+      }
+    },
+    {
+      "id": "Q036",
+      "question": "Freebase nicotine is described as having a peppery throat hit.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Freebase nicotine generally produces a harsher or more peppery throat sensation than protonated nicotine salts at comparable concentrations.",
+      "category": "Freebase",
+      "source": "Freebase page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9230963/"
+      }
+    },
+    {
+      "id": "Q039",
+      "question": "Nicotine salts are described as smoother on the throat than freebase.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "Nicotine salts are protonated with an acid, which generally reduces inhalation harshness compared with freebase nicotine.",
+      "category": "Nic Salts",
+      "source": "Nic Salts page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9230963/"
+      }
+    },
+    {
+      "id": "Q040",
+      "question": "Which coil family is compatible with the Vaporesso iTank T?",
+      "choices": [
+        "PnP X",
+        "Nautilus BVC",
+        "GTi",
+        "PnP series"
+      ],
+      "answer": 2,
+      "explanation": "The tank uses GTi coils.",
+      "category": "Tanks",
+      "source": "Tank pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/series-product/itank-series/itank-t"
+      }
+    },
+    {
+      "id": "Q041",
+      "question": "Is the Vaporesso iTank T aimed mainly at MTL or DTL users?",
+      "choices": [
+        "MTL",
+        "Neither",
+        "DTL",
+        "Both equally"
+      ],
+      "answer": 2,
+      "explanation": "The page identifies it for DTL users.",
+      "category": "Tanks",
+      "source": "Tank pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/series-product/itank-series/itank-t"
+      }
+    },
+    {
+      "id": "Q042",
+      "question": "Which coil family is compatible with the Voopoo UForce-X Tank?",
+      "choices": [
+        "PnP X",
+        "PnP series",
+        "GTi",
+        "Nautilus BVC"
+      ],
+      "answer": 0,
+      "explanation": "The tank uses PnP X coils.",
+      "category": "Tanks",
+      "source": "Tank pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.voopoo.com/uforce-tank-series/uforce-x-tank"
+      }
+    },
+    {
+      "id": "Q043",
+      "question": "Is the Voopoo UForce-X Tank aimed mainly at MTL or DTL users?",
+      "choices": [
+        "DTL",
+        "Neither",
+        "Both equally",
+        "MTL"
+      ],
+      "answer": 0,
+      "explanation": "The page identifies it for DTL users.",
+      "category": "Tanks",
+      "source": "Tank pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.voopoo.com/uforce-tank-series/uforce-x-tank"
+      }
+    },
+    {
+      "id": "Q044",
+      "question": "Which coil family is compatible with the Voopoo UForce-L Tank?",
+      "choices": [
+        "PnP coils",
+        "PnP X coils",
+        "GTi coils",
+        "Nautilus coils"
+      ],
+      "answer": 0,
+      "explanation": "The original UFORCE-L tank uses the VOOPOO PnP coil platform, including compatible PnP variants specified by VOOPOO.",
+      "category": "Tanks",
+      "source": "Tank pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.voopoo.com/pnp-platform/uforce-l-tank.html"
+      }
+    },
+    {
+      "id": "Q045",
+      "question": "Is the Voopoo UForce-L Tank aimed mainly at MTL or DTL users?",
+      "choices": [
+        "MTL",
+        "Both equally",
+        "DTL",
+        "Neither"
+      ],
+      "answer": 2,
+      "explanation": "The page identifies it for DTL users.",
+      "category": "Tanks",
+      "source": "Tank pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.voopoo.com/pnp-platform/uforce-l-tank.html"
+      }
+    },
+    {
+      "id": "Q046",
+      "question": "Which coil family is compatible with the Aspire Nautilus 3 Tank?",
+      "choices": [
+        "Nautilus BVC",
+        "PnP series",
+        "PnP X",
+        "GTi"
+      ],
+      "answer": 0,
+      "explanation": "The tank uses Nautilus BVC coils.",
+      "category": "Tanks",
+      "source": "Tank pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.aspirecig.com/faq/how-do-i-install-coil-in-nautilus-3-tank/"
+      }
+    },
+    {
+      "id": "Q047",
+      "question": "Is the Aspire Nautilus 3 Tank aimed mainly at MTL or DTL users?",
+      "choices": [
+        "Neither",
+        "MTL",
+        "Both equally",
+        "DTL"
+      ],
+      "answer": 1,
+      "explanation": "The page identifies it for MTL users.",
+      "category": "Tanks",
+      "source": "Tank pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.aspirecig.com/faq/how-do-i-install-coil-in-nautilus-3-tank/"
+      }
+    },
+    {
+      "id": "Q048",
+      "question": "Which coil family is compatible with the Innokin T18 2 Tank?",
+      "choices": [
+        "PnP X",
+        "PnP series",
+        "GTi",
+        "T18E 1.5 and 1.7"
+      ],
+      "answer": 3,
+      "explanation": "The tank uses T18E 1.5 and 1.7 coils.",
+      "category": "Tanks",
+      "source": "Tank pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vpz.co.uk/coils-and-pods/vape-coils/innokin/innokin-t18-e-coils-15ohm-or-17ohm"
+      }
+    },
+    {
+      "id": "Q049",
+      "question": "Is the Innokin T18 2 Tank aimed mainly at MTL or DTL users?",
+      "choices": [
+        "DTL",
+        "Both equally",
+        "MTL",
+        "Neither"
+      ],
+      "answer": 2,
+      "explanation": "The page identifies it for MTL users.",
+      "category": "Tanks",
+      "source": "Tank pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vpz.co.uk/coils-and-pods/vape-coils/innokin/innokin-t18-e-coils-15ohm-or-17ohm"
+      }
+    },
+    {
+      "id": "Q050",
+      "question": "UK-compliant refillable vape tanks sold to consumers are limited to a maximum capacity of 2ml.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "The UK Tobacco and Related Products Regulations restrict refillable e-cigarette tanks sold to consumers to no more than 2ml.",
+      "category": "Tanks",
+      "source": "Tank pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.gov.uk/guidance/e-cigarettes-regulations-for-consumer-products"
+      }
+    },
+    {
+      "id": "Q051",
+      "question": "Which tank includes small shutters intended to reduce leaking when the coil is removed?",
+      "choices": [
+        "Aspire Nautilus 3 Tank",
+        "Vaporesso iTank T",
+        "Voopoo UForce-X Tank",
+        "Innokin T18 2 Tank"
+      ],
+      "answer": 0,
+      "explanation": "The Nautilus 3 has an e-liquid shutoff valve that closes the liquid ports when the press-fit coil is removed, reducing leakage during coil changes.",
+      "category": "Tanks",
+      "source": "Nautilus page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.aspirecig.com/faq/how-do-i-install-coil-in-nautilus-3-tank/"
+      }
+    },
+    {
+      "id": "Q052",
+      "question": "Which tank is described as using a 180-degree top fill?",
+      "choices": [
+        "Voopoo UForce-X Tank",
+        "Aspire Nautilus 3 Tank",
+        "Innokin T18 2 Tank",
+        "Vaporesso iTank T"
+      ],
+      "answer": 0,
+      "explanation": "The UFORCE-X uses a rotating top-cap filling design described as a 180-degree top-fill system in the product material.",
+      "category": "Tanks",
+      "source": "UForce-X page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.voopoo.com/uforce-tank-series/uforce-x-tank"
+      }
+    },
+    {
+      "id": "Q054",
+      "question": "What capacity is listed for the Vapcell 18650 P25A battery?",
+      "choices": [
+        "2500mAh",
+        "1500mAh",
+        "4200mAh",
+        "3000mAh"
+      ],
+      "answer": 0,
+      "explanation": "The 18650 P25A is listed at 2500mAh.",
+      "category": "Batteries",
+      "source": "Battery page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vapcelltech.com/h-col-135.html"
+      }
+    },
+    {
+      "id": "Q055",
+      "question": "What capacity is listed for the Vapcell 21700 P42A battery?",
+      "choices": [
+        "5000mAh",
+        "3000mAh",
+        "2500mAh",
+        "4200mAh"
+      ],
+      "answer": 3,
+      "explanation": "The 21700 P42A is listed at 4200mAh.",
+      "category": "Batteries",
+      "source": "Battery page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vapcelltech.com/h-col-135.html"
+      }
+    },
+    {
+      "id": "Q056",
+      "question": "Why should cells used together in a multi-battery device remain a matched pair?",
+      "choices": [
+        "So they age and discharge together as consistently as possible.",
+        "To increase their voltage above the device limit.",
+        "To make either cell rechargeable by USB.",
+        "To convert them into protected cells."
+      ],
+      "answer": 0,
+      "explanation": "Keeping cells married as a set helps them remain similar in age, charge cycles and performance when used together.",
+      "category": "Batteries",
+      "source": "Battery page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vapcelltech.com/h-col-135.html"
+      }
+    },
+    {
+      "id": "Q057",
+      "question": "How many charging bays does the Xtar MC2 have?",
+      "choices": [
+        "2",
+        "1",
+        "6",
+        "4"
+      ],
+      "answer": 0,
+      "explanation": "Xtar MC2 has 2 bays.",
+      "category": "Chargers",
+      "source": "Charger page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.xtar.cc/visible-smart-charger.html"
+      }
+    },
+    {
+      "id": "Q058",
+      "question": "How many charging bays does the Xtar MC4S have?",
+      "choices": [
+        "6",
+        "4",
+        "1",
+        "2"
+      ],
+      "answer": 1,
+      "explanation": "Xtar MC4S has 4 bays.",
+      "category": "Chargers",
+      "source": "Charger page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.xtar.cc/visible-smart-charger.html"
+      }
+    },
+    {
+      "id": "Q059",
+      "question": "How many charging bays does the Xtar VC2SL have?",
+      "choices": [
+        "1",
+        "2",
+        "6",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "Xtar VC2SL has 2 bays.",
+      "category": "Chargers",
+      "source": "Charger page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.xtar.cc/visible-smart-charger.html"
+      }
+    },
+    {
+      "id": "Q060",
+      "question": "How many charging bays does the Xtar VC4SL have?",
+      "choices": [
+        "6",
+        "2",
+        "1",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "Xtar VC4SL has 4 bays.",
+      "category": "Chargers",
+      "source": "Charger page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.xtar.cc/visible-smart-charger.html"
+      }
+    },
+    {
+      "id": "Q061",
+      "question": "Which pair of chargers has an LCD display?",
+      "choices": [
+        "Xtar MC2 and MC4S",
+        "Xtar MC2 and VC2SL",
+        "Xtar VC2SL and VC4SL",
+        "Xtar MC4S and VC4SL"
+      ],
+      "answer": 2,
+      "explanation": "The XTAR VC2SL and VC4SL are LCD smart chargers; the MC2 and MC4S use simpler status indicators.",
+      "category": "Chargers",
+      "source": "Charger page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.xtar.cc/visible-smart-charger.html"
+      }
+    },
+    {
+      "id": "Q062",
+      "question": "What activation method is listed for the Voopoo Vinci Spark100 Kit?",
+      "choices": [
+        "Button or draw",
+        "Neither button nor draw",
+        "Button only",
+        "Draw only"
+      ],
+      "answer": 2,
+      "explanation": "The VINCI Spark100 is a regulated box-mod kit fired using its physical fire button.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.voopoo.com/vinci-series/vinci-spark100"
+      }
+    },
+    {
+      "id": "Q063",
+      "question": "Which pod or coil family does the Voopoo Vinci Spark100 Kit use?",
+      "choices": [
+        "PnP X coils",
+        "Nexlim pods",
+        "Xlim pods",
+        "Xros pods"
+      ],
+      "answer": 0,
+      "explanation": "It uses PnP X series coils.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.voopoo.com/vinci-series/vinci-spark100"
+      }
+    },
+    {
+      "id": "Q064",
+      "question": "What battery capacity is listed for the Voopoo Argus Pro 2 Pod Kit?",
+      "choices": [
+        "3000mAh",
+        "1300mAh",
+        "1800mAh",
+        "1500mAh"
+      ],
+      "answer": 0,
+      "explanation": "The Voopoo Argus Pro 2 has a 3000mAh built-in battery.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.voopoo.com/argus-series/argus-pro2"
+      }
+    },
+    {
+      "id": "Q065",
+      "question": "What activation method is listed for the Voopoo Argus Pro 2 Pod Kit?",
+      "choices": [
+        "Draw only",
+        "Button or draw",
+        "Neither button nor draw",
+        "Button only"
+      ],
+      "answer": 3,
+      "explanation": "The ARGUS Pro 2 is fired using its physical fire button.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.voopoo.com/argus-series/argus-pro2"
+      }
+    },
+    {
+      "id": "Q066",
+      "question": "Which pod or coil family does the Voopoo Argus Pro 2 Pod Kit use?",
+      "choices": [
+        "Xros pods",
+        "PnP X coils",
+        "Nexlim pods",
+        "Xlim pods"
+      ],
+      "answer": 1,
+      "explanation": "It uses PnP X series coils.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.voopoo.com/argus-series/argus-pro2"
+      }
+    },
+    {
+      "id": "Q067",
+      "question": "What battery capacity is listed for the OXVA Nexlim Pod Kit?",
+      "choices": [
+        "1300mAh",
+        "2000mAh",
+        "1500mAh",
+        "1800mAh"
+      ],
+      "answer": 2,
+      "explanation": "The OXVA Nexlim has a 1500mAh built-in battery.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.oxva.com/pages/nexlim"
+      }
+    },
+    {
+      "id": "Q068",
+      "question": "What activation method is listed for the OXVA Nexlim Pod Kit?",
+      "choices": [
+        "Button only",
+        "Draw only",
+        "Button or draw",
+        "Neither button nor draw"
+      ],
+      "answer": 1,
+      "explanation": "The NeXLIM is auto-draw activated, so inhaling through the mouthpiece starts the puff.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.oxva.com/pages/nexlim"
+      }
+    },
+    {
+      "id": "Q069",
+      "question": "Which pod or coil family does the OXVA Nexlim Pod Kit use?",
+      "choices": [
+        "Xlim pods",
+        "Xros pods",
+        "PnP X coils",
+        "Nexlim pods"
+      ],
+      "answer": 3,
+      "explanation": "It uses Nexlim 0.6, 0.8, 1.2 ohm pods.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.oxva.com/pages/nexlim"
+      }
+    },
+    {
+      "id": "Q070",
+      "question": "What battery capacity is listed for the OXVA Nexlim Go Pod Kit?",
+      "choices": [
+        "1800mAh",
+        "2000mAh",
+        "1500mAh",
+        "1300mAh"
+      ],
+      "answer": 0,
+      "explanation": "The OXVA Nexlim Go has an 1800mAh built-in battery.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.oxva.com/pages/nexlim-go"
+      }
+    },
+    {
+      "id": "Q071",
+      "question": "What activation method is listed for the OXVA Nexlim Go Pod Kit?",
+      "choices": [
+        "Draw only",
+        "Button or draw",
+        "Neither button nor draw",
+        "Button only"
+      ],
+      "answer": 0,
+      "explanation": "The NeXLIM GO is designed for automatic draw activation.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.oxva.com/pages/nexlim-go"
+      }
+    },
+    {
+      "id": "Q072",
+      "question": "Which pod or coil family does the OXVA Nexlim Go Pod Kit use?",
+      "choices": [
+        "Xros pods",
+        "PnP X coils",
+        "Nexlim pods",
+        "Xlim pods"
+      ],
+      "answer": 2,
+      "explanation": "It uses Nexlim 0.6, 0.8, 1.2 ohm pods.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.oxva.com/pages/nexlim-go"
+      }
+    },
+    {
+      "id": "Q076",
+      "question": "What battery capacity is listed for the Vaporesso Xros 5 Mini Pod Kit?",
+      "choices": [
+        "2000mAh",
+        "1800mAh",
+        "1300mAh",
+        "1500mAh"
+      ],
+      "answer": 3,
+      "explanation": "The Vaporesso Xros 5 Mini has a 1500mAh built-in battery.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/series-product/xros-series/xros5-mini"
+      }
+    },
+    {
+      "id": "Q077",
+      "question": "What activation method is listed for the Vaporesso Xros 5 Mini Pod Kit?",
+      "choices": [
+        "Neither button nor draw",
+        "Button only",
+        "Draw only",
+        "Button or draw"
+      ],
+      "answer": 2,
+      "explanation": "The Vaporesso Xros 5 Mini uses draw activation.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/series-product/xros-series/xros5-mini"
+      }
+    },
+    {
+      "id": "Q078",
+      "question": "Which pod or coil family does the Vaporesso Xros 5 Mini Pod Kit use?",
+      "choices": [
+        "Nexlim pods",
+        "Xlim pods",
+        "Xros pods",
+        "PnP X coils"
+      ],
+      "answer": 2,
+      "explanation": "It uses Xros series pods.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/series-product/xros-series/xros5-mini"
+      }
+    },
+    {
+      "id": "Q079",
+      "question": "What battery capacity is listed for the Vaporesso Xros Pro 2 Pod Kit?",
+      "choices": [
+        "1300mAh",
+        "1800mAh",
+        "2000mAh",
+        "1500mAh"
+      ],
+      "answer": 2,
+      "explanation": "The Vaporesso Xros Pro 2 has a 2000mAh built-in battery.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/series-product/xros-series/xros-pro2"
+      }
+    },
+    {
+      "id": "Q080",
+      "question": "What activation method is listed for the Vaporesso Xros Pro 2 Pod Kit?",
+      "choices": [
+        "Button only",
+        "Draw only",
+        "Button or draw",
+        "Neither button nor draw"
+      ],
+      "answer": 2,
+      "explanation": "The XROS Pro 2 supports both automatic draw and button activation.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/series-product/xros-series/xros-pro2"
+      }
+    },
+    {
+      "id": "Q081",
+      "question": "Which pod or coil family does the Vaporesso Xros Pro 2 Pod Kit use?",
+      "choices": [
+        "Xlim pods",
+        "Xros pods",
+        "PnP X coils",
+        "Nexlim pods"
+      ],
+      "answer": 1,
+      "explanation": "It uses Xros series pods.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/series-product/xros-series/xros-pro2"
+      }
+    },
+    {
+      "id": "Q082",
+      "question": "Which device in the material requires a separate 18650 battery?",
+      "choices": [
+        "OXVA Xlim Pro 2 Pod Kit",
+        "Vaporesso Xros Pro 2 Pod Kit",
+        "Voopoo Argus Pro 2 Pod Kit",
+        "Voopoo Vinci Spark100 Kit"
+      ],
+      "answer": 3,
+      "explanation": "The Vinci Spark100 requires one 18650 battery.",
+      "category": "Devices",
+      "source": "Vinci Spark100 page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.voopoo.com/vinci-series/vinci-spark100"
+      }
+    },
+    {
+      "id": "Q083",
+      "question": "Which listed pod kit has the largest built-in battery capacity?",
+      "choices": [
+        "OXVA Nexlim Go Pod Kit",
+        "Vaporesso Xros 5 Mini Pod Kit",
+        "Voopoo Argus Pro 2 Pod Kit",
+        "Vaporesso Xros Pro 2 Pod Kit"
+      ],
+      "answer": 2,
+      "explanation": "The Argus Pro 2 is listed at 3000mAh.",
+      "category": "Devices",
+      "source": "Device pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.voopoo.com/argus-series/argus-pro2"
+      }
+    },
+    {
+      "id": "Q084",
+      "question": "Which Xros device is described as having the biggest battery in the Xros series shown?",
+      "choices": [
+        "OXVA Xlim Pro 2 Pod Kit",
+        "Vaporesso Xros Pro 2 Pod Kit",
+        "Vaporesso Xros 5 Mini Pod Kit",
+        "None of these"
+      ],
+      "answer": 1,
+      "explanation": "The Vaporesso Xros Pro 2 has the largest battery among the Xros devices included in this quiz.",
+      "category": "Devices",
+      "source": "Xros Pro 2 page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/series-product/xros-series/xros-pro2"
+      }
+    },
+    {
+      "id": "Q085",
+      "question": "Which device combines a 1500mAh battery, colour screen, and ECO/BOOST modes?",
+      "choices": [
+        "OXVA NeXLIM Pod Kit",
+        "VOOPOO Argus Pro 2 Pod Kit",
+        "OXVA NeXLIM GO Pod Kit",
+        "Vaporesso XROS 5 Mini Pod Kit"
+      ],
+      "answer": 0,
+      "explanation": "The original NeXLIM has a 1500mAh battery, a colour screen and selectable ECO and BOOST modes. The NeXLIM GO also has ECO/BOOST, but uses a larger 1800mAh battery and a simpler screen-free design.",
+      "category": "Devices",
+      "source": "Nexlim page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.oxva.com/pages/nexlim"
+      }
+    },
+    {
+      "id": "Q086",
+      "question": "Which device is the simpler NeXLIM model with an 1800mAh battery and no full colour screen?",
+      "choices": [
+        "OXVA NeXLIM GO Pod Kit",
+        "OXVA XLIM Pro 2 Pod Kit",
+        "OXVA NeXLIM Pod Kit",
+        "Vaporesso XROS 5 Mini Pod Kit"
+      ],
+      "answer": 0,
+      "explanation": "The NeXLIM GO simplifies the NeXLIM design while increasing battery capacity to 1800mAh.",
+      "category": "Devices",
+      "source": "Nexlim Go page",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.oxva.com/pages/nexlim-go"
+      }
+    },
+    {
+      "id": "Q087",
+      "question": "Which Xlim pod type is top-fill?",
+      "choices": [
+        "Xlim V2 pods",
+        "Xlim V3 pods",
+        "Xlim EZ pods",
+        "All Xlim pod types"
+      ],
+      "answer": 2,
+      "explanation": "Using the terminology requested for this quiz, XLIM EZ pods are top-fill, XLIM V2 pods are bottom-fill and XLIM V3 pods are side-fill.",
+      "category": "Pods",
+      "source": "User terminology update",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.oxva.com/pages/xlim-ez-cartridge"
+      }
+    },
+    {
+      "id": "Q088",
+      "question": "Which XROS pod resistance was introduced as the higher-power RDL option in the XROS range?",
+      "choices": [
+        "1.2 ohm",
+        "0.8 ohm",
+        "0.4 ohm",
+        "0.6 ohm"
+      ],
+      "answer": 2,
+      "explanation": "The 0.4-ohm XROS pod was introduced as the higher-power RDL option. Current Vaporesso compatibility information lists XROS pods across the XROS series, so the previous “generation 4 and up only” wording was removed.",
+      "category": "Pods",
+      "source": "Xros pages",
+      "verification": {
+        "status": "checked_online",
+        "checked_on": "2026-07-15",
+        "source_url": "https://www.vaporesso.com/series-product/xros-pods/xros-pod"
+      }
+    }
+  ],
+  "notes": [
+    "Prices, flavour-count questions, strength-set questions, and Vaporesso Xros 4 Pod Kit series questions are excluded.",
+    "Answer choices are shuffled separately every time a quiz starts.",
+    "Study Mode gives immediate feedback and explanations; Test Mode reveals them only after completion.",
+    "Xlim terminology: V2 bottom-fill, V3 side-fill, EZ top-fill.",
+    "Removed OXVA XLIM Pro 2 questions as the product is no longer stocked."
+  ],
+  "verification_summary": {
+    "checked_on": "2026-07-15",
+    "method": "Every question was reviewed against online manufacturer documentation, official UK regulation, primary research, or a product source where manufacturer documentation was unavailable.",
+    "removed_question_ids": [
+      "Q017",
+      "Q018",
+      "Q037",
+      "Q038",
+      "Q053"
+    ],
+    "important_corrections": [
+      "Removed unsupported exact nicotine absorption-time questions.",
+      "Removed ambiguous slide-top filling question with multiple correct answers.",
+      "Corrected Pulse Mode, PCTG, UK 2ml law and XROS 0.4-ohm compatibility wording.",
+      "Rewrote the NeXLIM ECO/BOOST question so only one answer is correct."
+    ]
+  }
+}

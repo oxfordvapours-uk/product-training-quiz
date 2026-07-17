@@ -2,7 +2,7 @@
   "title": "Oxford Vapours Training Quiz Bank",
   "version": "2.7",
   "generated_from": "21 uploaded training images",
-  "question_count": 80,
+  "question_count": 81,
   "questions": [
     {
       "id": "Q001",
@@ -1493,6 +1493,18 @@
         "checked_on": "2026-07-15",
         "source_url": "https://www.vaporesso.com/series-product/xros-pods/xros-pod"
       }
+    },
+    {
+      "id": "Q089",
+      "question": "test",
+      "category": "Batteries",
+      "choices": [
+        "test",
+        "test"
+      ],
+      "answer": 0,
+      "explanation": "testt",
+      "source": "Added with question editor"
     }
   ],
   "notes": [

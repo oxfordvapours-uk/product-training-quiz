@@ -175,6 +175,7 @@ button:disabled {
   border-radius: 999px;
   font-size: 0.85rem;
   font-weight: 700;
+  margin-left: 5px;
 }
 
 .score {
@@ -277,4 +278,27 @@ footer {
   text-align: center;
   color: var(--muted);
   padding: 24px;
+}
+
+.admin-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0 30px;
+  flex-wrap: wrap;
+}
+
+.admin-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #35ad2f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.admin-btn:hover {
+  background: #2b8f26;
 }

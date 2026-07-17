@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Add Quiz Question</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f3f6f3;
+        margin: 0;
+        color: #17211a;
+      }
+      .wrap {
+        max-width: 850px;
+        margin: auto;
+        padding: 24px;
+      }
+      .card {
+        background: white;
+        padding: 24px;
+        border-radius: 16px;
+        box-shadow: 0 8px 25px #0002;
+        margin: 18px 0;
+      }
+      h1 {
+        color: #35ad2f;
+      }
+      label {
+        display: block;
+        font-weight: 700;
+        margin: 14px 0 6px;
+      }
+      input,
+      select,
+      textarea,
+      button {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #cbd5cb;
+        border-radius: 9px;
+        font-size: 1rem;
+        box-sizing: border-box;
+      }
+      textarea {
+        min-height: 90px;
+      }
+      button {
+        background: #35ad2f;
+        color: white;
+        border: 0;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .secondary {
+        background: #e9efe9;
+        color: #17211a;
+      }
+      .danger {
+        background: #b42318;
+      }
+      .row {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin: 8px 0;
+      }
+      .row input[type="radio"] {
+        width: auto;
+      }
+      .row input[type="text"] {
+        flex: 1;
+      }
+      .row button {
+        width: auto;
+      }
+      .actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 18px;
+      }
+      .hidden {
+        display: none;
+      }
+      .status {
+        background: #f4f7f4;
+        padding: 12px;
+        border-radius: 9px;
+        margin-top: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <a href="index.html" class="back-btn">← Back to Quiz</a>
+      <!-- 
+      <div class="card">
+        <p>
+          Open the question-bank JSON file, complete the form, then save
+          directly back to the same file.
+        </p>
+        <button id="openBtn">Open question-bank JSON</button>
+        <div id="fileInfo" class="status hidden"></div>
+      </div> -->
+
+      <div id="formCard" class="card">
+        <h1>Add a new question</h1>
+
+        <label>Category</label
+        ><select id="category"></select>
+        <label>Question</label><textarea id="question"></textarea>
+        <label>Possible answers</label>
+        <p>Select the radio button beside the correct answer.</p>
+        <div id="answers"></div>
+        <button type="button" id="addAnswerBtn" class="secondary">
+          Add another possible answer
+        </button>
+        <label>Explanation (optional)</label
+        ><textarea id="explanation"></textarea>
+        <div class="actions">
+          <button id="saveBtn">Add question and save JSON</button
+          ><button id="clearBtn" class="secondary">Clear form</button>
+        </div>
+        <div id="status" class="status hidden"></div>
+      </div>
+    </div>
+    <script>
+      let bank = null;
+      const $ = (id) => document.getElementById(id);
+
+      function esc(s) {
+        return String(s)
+          .replace(/&/g, "&amp;")
+          .replace(/"/g, "&quot;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;");
+      }
+
+      function nextId() {
+        const nums = bank.questions
+          .map((q) => Number(String(q.id || "").replace(/\D/g, "")))
+          .filter(Number.isFinite);
+
+        return (
+          "Q" +
+          String((nums.length ? Math.max(...nums) : 0) + 1).padStart(3, "0")
+        );
+      }
+
+      function addAnswer(value = "") {
+        const row = document.createElement("div");
+        row.className = "row";
+
+        row.innerHTML = `
+      <input type="radio" name="correct">
+      <input
+        type="text"
+        class="answerText"
+        value="${esc(value)}"
+        placeholder="Possible answer"
+      >
+      <button type="button" class="danger">Remove</button>
+    `;
+
+        row.querySelector("button").onclick = () => {
+          if ($("answers").children.length <= 2) {
+            alert("At least two answers are required.");
+            return;
+          }
+
+          row.remove();
+        };
+
+        $("answers").appendChild(row);
+      }
+
+      function populateCategories(selectedCategory = "") {
+        const cats = [
+          ...new Set(bank.questions.map((q) => q.category).filter(Boolean)),
+        ].sort();
+
+        $("category").innerHTML = "";
+
+        cats.forEach((category) => {
+          const option = document.createElement("option");
+          option.value = category;
+          option.textContent = category;
+          $("category").appendChild(option);
+        });
+
+        const newCategoryOption = document.createElement("option");
+        newCategoryOption.value = "__new__";
+        newCategoryOption.textContent = "Add a new category…";
+        $("category").appendChild(newCategoryOption);
+
+        if (selectedCategory && cats.includes(selectedCategory)) {
+          $("category").value = selectedCategory;
+        }
+      }
+
+      function clearForm() {
+        $("question").value = "";
+        $("explanation").value = "";
+        $("answers").innerHTML = "";
+
+        for (let i = 0; i < 2; i++) {
+          addAnswer();
+        }
+
+        $("answers").querySelector('input[type="radio"]').checked = true;
+      }
+
+      async function openBank() {
+        const response = await fetch("question-bank.json", {
+          cache: "no-store",
+        });
+
+        if (!response.ok) {
+          throw new Error(
+            `Could not load question-bank.json. Server returned ${response.status}.`,
+          );
+        }
+
+        bank = await response.json();
+
+        if (!Array.isArray(bank.questions)) {
+          throw new Error("No questions array found.");
+        }
+
+        populateCategories();
+        clearForm();
+      }
+
+      async function saveBank() {
+        const response = await fetch("/save", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(bank),
+        });
+
+        let result = null;
+
+        try {
+          result = await response.json();
+        } catch {
+          // The server may return an empty response or plain text.
+        }
+
+        if (!response.ok) {
+          const message =
+            result?.error ||
+            result?.message ||
+            `Save failed. Server returned ${response.status}.`;
+
+          throw new Error(message);
+        }
+
+        return result;
+      }
+
+      async function saveBank() {
+        try {
+          const response = await fetch("/save", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(bank),
+          });
+
+          if (!response.ok) {
+            throw new Error(`Server returned ${response.status}`);
+          }
+
+          const result = await response.json();
+
+          alert(`Saved successfully (${result.questions} questions).`);
+        } catch (err) {
+          console.error(err);
+          alert("Failed to save the question bank.");
+        }
+      }
+
+      async function saveQuestion() {
+        if (!bank || !Array.isArray(bank.questions)) {
+          throw new Error("The question bank has not loaded yet.");
+        }
+
+        let category = $("category").value;
+
+        if (category === "__new__") {
+          category = prompt("Enter the new category name:");
+
+          if (!category || !category.trim()) {
+            return;
+          }
+
+          category = category.trim();
+        }
+
+        const question = $("question").value.trim();
+        const rows = [...document.querySelectorAll("#answers .row")];
+
+        const choices = rows
+          .map((row) => row.querySelector(".answerText").value.trim())
+          .filter(Boolean);
+
+        const selectedRow = rows.find(
+          (row) => row.querySelector('input[type="radio"]').checked,
+        );
+
+        if (!question) {
+          alert("Enter the question.");
+          return;
+        }
+
+        if (choices.length < 2) {
+          alert("Enter at least two answers.");
+          return;
+        }
+
+        if (!selectedRow) {
+          alert("Select the correct answer.");
+          return;
+        }
+
+        const correctText = selectedRow
+          .querySelector(".answerText")
+          .value.trim();
+
+        const answer = choices.indexOf(correctText);
+
+        if (answer < 0) {
+          alert("The selected correct answer is blank.");
+          return;
+        }
+
+        const newQuestion = {
+          id: nextId(),
+          question,
+          choices,
+          answer,
+          explanation: $("explanation").value.trim() || correctText,
+          category,
+          source: "Added with question editor",
+        };
+
+        bank.questions.push(newQuestion);
+        bank.question_count = bank.questions.length;
+
+        $("saveBtn").disabled = true;
+        $("saveBtn").textContent = "Saving…";
+
+        try {
+          await saveBank();
+
+          populateCategories(category);
+          clearForm();
+
+          $("status").textContent =
+            `${newQuestion.id} saved. ` +
+            `The bank now contains ${bank.questions.length} questions.`;
+
+          $("status").classList.remove("hidden");
+        } catch (error) {
+          /*
+           * Remove the question from browser memory if the server save fails.
+           * This prevents the next save from adding the same question twice.
+           */
+          bank.questions.pop();
+          bank.question_count = bank.questions.length;
+
+          throw error;
+        } finally {
+          $("saveBtn").disabled = false;
+          $("saveBtn").textContent = "Add question and save JSON";
+        }
+      }
+
+      openBank().catch((error) => {
+        console.error(error);
+        alert(error.message);
+      });
+
+      $("addAnswerBtn").onclick = () => addAnswer();
+      $("clearBtn").onclick = clearForm;
+
+      $("saveBtn").onclick = () => {
+        saveQuestion().catch((error) => {
+          console.error(error);
+          alert(`Could not save the question: ${error.message}`);
+        });
+      };
+    </script>
+  </body>
+</html>

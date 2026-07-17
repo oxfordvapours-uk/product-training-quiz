@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Edit Quiz Questions</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f3f6f3;
+        margin: 0;
+        color: #17211a;
+      }
+      .wrap {
+        max-width: 1000px;
+        margin: auto;
+        padding: 24px;
+      }
+      .card {
+        background: white;
+        padding: 24px;
+        border-radius: 16px;
+        box-shadow: 0 8px 25px #0002;
+        margin: 18px 0;
+      }
+      h1 {
+        color: #35ad2f;
+      }
+      label {
+        display: block;
+        font-weight: 700;
+        margin: 14px 0 6px;
+      }
+      input,
+      select,
+      textarea,
+      button {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #cbd5cb;
+        border-radius: 9px;
+        font-size: 1rem;
+        box-sizing: border-box;
+      }
+      textarea {
+        min-height: 85px;
+      }
+      button {
+        background: #35ad2f;
+        color: white;
+        border: 0;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .secondary {
+        background: #e9efe9;
+        color: #17211a;
+      }
+      .danger {
+        background: #b42318;
+      }
+      .row {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin: 8px 0;
+      }
+      .row input[type="radio"] {
+        width: auto;
+      }
+      .row input[type="text"] {
+        flex: 1;
+      }
+      .row button {
+        width: auto;
+      }
+      .toolbar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+        align-items: end;
+        position: sticky;
+        top: 0;
+        background: #f3f6f3;
+        padding: 10px 0;
+        z-index: 3;
+      }
+      .toolbar button {
+        width: auto;
+      }
+      .question-card {
+        border-left: 6px solid #35ad2f;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: center;
+      }
+      .header button {
+        width: auto;
+      }
+      .hidden {
+        display: none;
+      }
+      .status {
+        background: #f4f7f4;
+        padding: 12px;
+        border-radius: 9px;
+        margin-top: 12px;
+      }
+      .actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 16px;
+      }
+      .actions button {
+        width: auto;
+      }
+    </style>
+  </head>
+  <body data-page="edit">
+    <div class="wrap">
+      <a href="index.html" class="back-btn">← Back to Quiz</a>
+      <div class="card">
+        <h1>Edit existing questions</h1>
+        <p>
+          Search the question bank, edit the prefilled fields, and save back to
+          the JSON file.
+        </p>
+        <div id="fileInfo" class="status hidden"></div>
+      </div>
+      <div id="editor" class="hidden">
+        <div class="toolbar">
+          <div>
+            <label for="search">Search</label>
+            <input
+              id="search"
+              type="search"
+              placeholder="Search question, answer, category or ID"
+            />
+          </div>
+          <button id="saveAllBtn">Save all changes</button>
+        </div>
+        <p id="count"></p>
+        <div id="questions"></div>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

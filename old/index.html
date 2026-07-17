@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Oxford Vapours Training Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="admin-buttons">
+        <a href="index.html" class="admin-btn">Home</a>
+        <a href="add-question.html" class="admin-btn">Add Questions</a>
+
+        <a href="edit-questions.html" class="admin-btn">Edit Questions</a>
+      </div>
+
+      <div class="card" id="start">
+        <h1>Oxford Vapours Training Quiz</h1>
+        <p class="muted">
+          Randomised practice from a bank of
+          <strong><span id="questionCount">0</span></strong>
+          questions created from your uploaded training pages.
+        </p>
+        <div class="controls">
+          <div>
+            <label for="count">Questions per quiz</label
+            ><select id="count">
+              <option>10</option>
+              <option selected>20</option>
+              <option>30</option>
+              <option>50</option>
+            </select>
+          </div>
+          <div>
+            <label for="category">Category</label
+            ><select id="category">
+              <option value="All">All categories</option>
+            </select>
+          </div>
+          <div>
+            <label for="mode">Quiz mode</label
+            ><select id="mode">
+              <option value="study">Study Mode</option>
+              <option value="test" selected>Test Mode</option>
+            </select>
+          </div>
+          <div><button id="startBtn">Start quiz</button></div>
+        </div>
+        <p class="small muted">
+          <b>Study Mode:</b> feedback appears after each answer.
+          <b>Test Mode:</b> answers and explanations stay hidden until the final
+          review.
+        </p>
+      </div>
+      <div class="card hidden" id="quiz">
+        <div>
+          <span class="pill" id="catPill"></span
+          ><span class="pill" id="modePill"></span
+          ><span class="muted" id="counter" style="float: right"></span>
+        </div>
+        <div class="progress">
+          <div class="bar" id="bar"></div>
+        </div>
+        <h2 id="question"></h2>
+        <div id="choices"></div>
+        <div id="feedback" class="feedback hidden"></div>
+        <div class="nav">
+          <button class="secondary" id="prevBtn">Previous</button
+          ><button id="nextBtn">Next</button>
+        </div>
+      </div>
+      <div class="card hidden" id="results">
+        <h2>Quiz complete</h2>
+        <div class="score" id="score"></div>
+        <p id="summary"></p>
+        <div class="result-totals" id="resultTotals"></div>
+        <div class="nav">
+          <button id="againBtn">New random quiz</button
+          ><button class="secondary" id="wrongBtn">Retry wrong answers</button>
+        </div>
+        <h3 style="margin-top: 28px">Review</h3>
+        <div id="review"></div>
+      </div>
+      <footer>Local offline quiz • No account required</footer>
+    </div>
+    <script>
+      let BANK = [];
+
+      function initialiseQuiz() {
+        const cats = [...new Set(BANK.map((q) => q.category))].sort();
+
+        cats.forEach((c) => {
+          const option = document.createElement("option");
+          option.value = c;
+          option.textContent = c;
+          document.getElementById("category").appendChild(option);
+        });
+
+        document.getElementById("startBtn").onclick = () => buildQuiz();
+
+        document.getElementById("againBtn").onclick = () => {
+          document.getElementById("results").classList.add("hidden");
+          document.getElementById("start").classList.remove("hidden");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+
+        document.getElementById("wrongBtn").onclick = () => {
+          if (lastWrong.length) buildQuiz(lastWrong);
+        };
+      }
+
+      async function loadQuestionBank() {
+        try {
+          const response = await fetch("question-bank.json");
+
+          if (!response.ok) {
+            throw new Error(
+              `Unable to load question bank (${response.status})`,
+            );
+          }
+
+          const data = await response.json();
+
+          // Supports either the full JSON structure or a plain questions array
+          BANK = Array.isArray(data) ? data : data.questions;
+
+          initialiseQuiz();
+        //   document.getElementById("questionCount").textContent = BANK.questions.length;
+          console.log("json initialsed");
+        } catch (err) {
+          document.body.innerHTML = `
+            <div style="max-width:700px;margin:60px auto;
+                        font-family:Arial;padding:30px;
+                        border:2px solid #c00;
+                        border-radius:12px">
+                <h2>Unable to load question bank</h2>
+                <p>${err.message}</p>
+                <p>Make sure
+                <strong>question-bank.json</strong>
+                is in the same folder as this HTML file.</p>
+            </div>`;
+        }
+      }
+
+      const els = (id) => document.getElementById(id);
+      let quiz = [],
+        answers = [],
+        idx = 0,
+        lastWrong = [],
+        mode = "test";
+      loadQuestionBank();
+      //   cats.forEach((c) => {
+      //     const o = document.createElement("option");
+      //     o.value = o.textContent = c;
+      //     els("category").appendChild(o);
+      //   });
+      function shuffle(a) {
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+      }
+      function prepareQuestion(q) {
+        const options = q.choices.map((text, originalIndex) => ({
+          text,
+          isCorrect: originalIndex === q.answer,
+        }));
+        shuffle(options);
+        return {
+          ...q,
+          options,
+          correctIndex: options.findIndex((o) => o.isCorrect),
+        };
+      }
+      function buildQuiz(source = null) {
+        let pool =
+          source ||
+          BANK.filter(
+            (q) =>
+              els("category").value === "All" ||
+              q.category === els("category").value,
+          );
+        const n = Math.min(parseInt(els("count").value), pool.length);
+        quiz = shuffle([...pool])
+          .slice(0, n)
+          .map(prepareQuestion);
+        answers = Array(n).fill(null);
+        idx = 0;
+        mode = els("mode").value;
+        els("start").classList.add("hidden");
+        els("results").classList.add("hidden");
+        els("quiz").classList.remove("hidden");
+        render();
+      }
+      function render() {
+        const q = quiz[idx],
+          selected = answers[idx];
+        els("counter").textContent = `Question ${idx + 1} of ${quiz.length}`;
+        els("catPill").textContent = q.category;
+        els("modePill").textContent =
+          mode === "study" ? "Study Mode" : "Test Mode";
+        els("bar").style.width = `${((idx + 1) / quiz.length) * 100}%`;
+        els("question").textContent = q.question;
+        const box = els("choices");
+        box.innerHTML = "";
+        q.options.forEach((o, i) => {
+          const b = document.createElement("button");
+          let cls = "choice" + (selected === i ? " selected" : "");
+          if (mode === "study" && selected !== null) {
+            if (i === q.correctIndex) cls += " reveal-correct";
+            else if (i === selected) cls += " reveal-wrong";
+          }
+          b.className = cls;
+          b.textContent = o.text;
+          b.onclick = () => {
+            answers[idx] = i;
+            render();
+          };
+          box.appendChild(b);
+        });
+        const fb = els("feedback");
+        if (mode === "study" && selected !== null) {
+          const ok = selected === q.correctIndex;
+          fb.className = `feedback ${ok ? "good" : "bad"}`;
+          fb.innerHTML = `<div class="feedback-title ${ok ? "correct" : "wrong"}">${ok ? "✓ Correct" : "✗ Incorrect"}</div>${ok ? "" : `<div><b>Correct answer:</b> ${escapeHtml(q.options[q.correctIndex].text)}</div>`}<p><b>Explanation:</b> ${escapeHtml(q.explanation)}</p>`;
+        } else {
+          fb.className = "feedback hidden";
+          fb.innerHTML = "";
+        }
+        els("prevBtn").disabled = idx === 0;
+        els("nextBtn").textContent =
+          idx === quiz.length - 1 ? "Finish" : "Next";
+      }
+      function escapeHtml(s) {
+        return String(s).replace(
+          /[&<>"']/g,
+          (c) =>
+            ({
+              "&": "&amp;",
+              "<": "&lt;",
+              ">": "&gt;",
+              '"': "&quot;",
+              "'": "&#039;",
+            })[c],
+        );
+      }
+      els("prevBtn").onclick = () => {
+        if (idx > 0) {
+          idx--;
+          render();
+        }
+      };
+      els("nextBtn").onclick = () => {
+        if (answers[idx] === null) {
+          alert("Choose an answer first.");
+          return;
+        }
+        if (idx < quiz.length - 1) {
+          idx++;
+          render();
+        } else finish();
+      };
+      function finish() {
+        let correct = 0;
+        lastWrong = [];
+        quiz.forEach((q, i) => {
+          if (answers[i] === q.correctIndex) correct++;
+          else lastWrong.push(BANK.find((x) => x.id === q.id));
+        });
+        const wrong = quiz.length - correct,
+          pct = Math.round((correct / quiz.length) * 100);
+        els("quiz").classList.add("hidden");
+        els("results").classList.remove("hidden");
+        els("score").textContent = `${correct} / ${quiz.length} (${pct}%)`;
+        els("summary").textContent =
+          pct >= 90
+            ? "Excellent result."
+            : pct >= 75
+              ? "Strong result—review the missed items below."
+              : pct >= 60
+                ? "Good start—another round will help reinforce the details."
+                : "Review the explanations and try another random set.";
+        els("resultTotals").innerHTML =
+          `<div class="total-box total-correct">✓ ${correct} correct</div><div class="total-box total-wrong">✗ ${wrong} incorrect</div>`;
+        const r = els("review");
+        r.innerHTML = "";
+        quiz.forEach((q, i) => {
+          const d = document.createElement("div"),
+            ok = answers[i] === q.correctIndex,
+            chosen = q.options[answers[i]].text,
+            correctText = q.options[q.correctIndex].text;
+          d.className = `review ${ok ? "review-correct" : "review-wrong"}`;
+          d.innerHTML = `<div class="status ${ok ? "correct" : "wrong"}">${ok ? "✓ CORRECT" : "✗ INCORRECT"}</div><strong class="review-question">${escapeHtml(q.question)}</strong><div class="answer-line ${ok ? "your-correct" : "your-wrong"}"><b>Your answer:</b> ${escapeHtml(chosen)}</div>${ok ? "" : `<div class="answer-line correct-answer"><b>Correct answer:</b> ${escapeHtml(correctText)}</div>`}<p class="muted"><b>Explanation:</b> ${escapeHtml(q.explanation)}</p><span class="pill">${escapeHtml(q.category)}</span>`;
+          r.appendChild(d);
+        });
+        els("wrongBtn").disabled = lastWrong.length === 0;
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      els("startBtn").onclick = () => buildQuiz();
+      els("againBtn").onclick = () => {
+        els("results").classList.add("hidden");
+        els("start").classList.remove("hidden");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+      els("wrongBtn").onclick = () => {
+        if (lastWrong.length) buildQuiz(lastWrong);
+      };
+    </script>
+  </body>
+</html>

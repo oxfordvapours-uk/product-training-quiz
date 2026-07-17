@@ -1,0 +1,280 @@
+:root {
+  --green: #35ad2f;
+  --dark: #17211a;
+  --soft: #f4f7f4;
+  --muted: #667268;
+  --bad: #b42318;
+  --good: #16794a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #f7faf7, #edf3ed);
+  color: var(--dark);
+}
+
+.wrap {
+  max-width: 920px;
+  margin: auto;
+  padding: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.09);
+  padding: 28px;
+  margin: 20px 0;
+}
+
+h1 {
+  margin: 0.2em 0;
+  color: var(--green);
+  font-size: clamp(2rem, 5vw, 3.4rem);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  align-items: end;
+}
+
+label {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 6px;
+}
+
+select,
+button {
+  width: 100%;
+  padding: 13px 14px;
+  border-radius: 10px;
+  border: 1px solid #cbd5cb;
+  font-size: 1rem;
+  background: white;
+}
+
+button {
+  cursor: pointer;
+  background: var(--green);
+  color: white;
+  border: none;
+  font-weight: 700;
+}
+
+button.secondary {
+  background: #e9efe9;
+  color: var(--dark);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.progress {
+  height: 10px;
+  background: #e6ece6;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 16px 0;
+}
+
+.bar {
+  height: 100%;
+  background: var(--green);
+  width: 0;
+}
+
+.choice {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 10px 0;
+  background: #f8faf8;
+  color: var(--dark);
+  border: 2px solid transparent;
+}
+
+.choice:hover {
+  border-color: #a7d7a2;
+}
+
+.choice.selected {
+  border-color: var(--green);
+  background: #eef8ed;
+}
+
+.choice.reveal-correct {
+  border-color: #16834f;
+  background: #dff4e7;
+}
+
+.choice.reveal-wrong {
+  border-color: #c6281b;
+  background: #ffe0dc;
+}
+
+.feedback {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  border: 2px solid;
+}
+
+.feedback.good {
+  background: #eefaf2;
+  border-color: #38a169;
+}
+
+.feedback.bad {
+  background: #fff1ef;
+  border-color: #d92d20;
+}
+
+.feedback-title {
+  font-weight: 900;
+  font-size: 1.1rem;
+  margin-bottom: 7px;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.nav button {
+  flex: 1;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.pill {
+  display: inline-block;
+  background: #e8f6e7;
+  color: #207a1e;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.score {
+  font-size: 3rem;
+  color: var(--green);
+  font-weight: 800;
+}
+
+.result-totals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 18px 0 24px;
+}
+
+.total-box {
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.total-correct {
+  background: #e8f7ee;
+  color: #12663e;
+  border: 2px solid #6fc795;
+}
+
+.total-wrong {
+  background: #fff0ee;
+  color: #9f1d14;
+  border: 2px solid #ef9b93;
+}
+
+.review {
+  margin: 16px 0;
+  padding: 20px;
+  border-radius: 14px;
+  border: 3px solid;
+}
+
+.review.review-correct {
+  background: #eefaf2;
+  border-color: #38a169;
+}
+
+.review.review-wrong {
+  background: #fff1ef;
+  border-color: #d92d20;
+}
+
+.status {
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.correct {
+  color: var(--good);
+}
+
+.wrong {
+  color: var(--bad);
+}
+
+.answer-line {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 9px;
+}
+
+.your-correct {
+  background: #dff4e7;
+  border-left: 6px solid #16834f;
+}
+
+.your-wrong {
+  background: #ffe0dc;
+  border-left: 6px solid #c6281b;
+}
+
+.correct-answer {
+  background: #dff4e7;
+  border-left: 6px solid #16834f;
+  font-weight: 700;
+}
+
+.review-question {
+  font-size: 1.08rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.small {
+  font-size: 0.92rem;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 24px;
+}
